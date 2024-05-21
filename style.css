@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Rubik",sans-serif;
+    background-color: rgb(67, 36, 161);
+}
+.container{
+    display: flex;
+    background-color: aliceblue;
+    border: 1px solid black;
+    border-radius: 15px;
+    flex-direction: column;
+    width: 400px;
+    height: 300px;
+    margin: 100px auto;
+    padding: 30px;
+    gap: 20px;
+   
+}
+.title{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.title img{
+    width: 2rem;
+}
+.input{
+    position: relative;
+
+}
+.input1{
+    width: 100%;
+    height: 40px;
+    margin: 0 auto;
+    border: none; /* <-- This thing here */
+    border:solid 1px #ccc;
+    border-radius: 20px;
+    
+}
+.input2{
+    position: absolute;
+    right: 1px;
+    height: 38px;
+    border: none; /* <-- This thing here */
+    border-radius: 20px;
+    width: 30%;
+    z-index: 1;
+    background: orangered;
+    color: azure;
+    transition: all 0.5s;
+   
+}
+.input2:hover{
+      background: azure;
+      color: orangered;
+}
+
+.line{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.line img{
+    width: 1.5rem;
+}
+
+
+.mini{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+}
+
+.mini img{
+    width: 1.5rem;
+}
+.mini a:checked{
+    width: 2rem;
+}
+
